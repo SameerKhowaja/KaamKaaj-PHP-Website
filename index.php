@@ -1,357 +1,306 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Library Management System</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-    <link href="css/docs.css" rel="stylesheet" media="screen">
-    <link href="css/diapo.css" rel="stylesheet" media="screen">
-    <link href="css/font-awesome.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/DT_bootstrap.css" />
+    <title>KaamKaaj</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- js -->
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.hoverdir.js"></script>
-    <script type="text/javascript" charset="utf-8" language="javascript" src="js/jquery.dataTables.js"></script>
-    <script type="text/javascript" charset="utf-8" language="javascript" src="js/DT_bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/templatemo-digital-trend.css">
 
-    <script>
-        jQuery(document).ready(function() {
-            $(function() {
-                $('.pix_diapo').diapo();
-            });
-        });
-    </script>
-    <noscript>
-			<style>
-				.da-thumbs li a div {
-					top: 0px;
-                    left: -100%;
-					-webkit-transition: all 0.3s ease;
-					-moz-transition: all 0.3s ease-in-out;
-					-o-transition: all 0.3s ease-in-out;
-					-ms-transition: all 0.3s ease-in-out;
-					transition: all 0.3s ease-in-out;
-				}
-				.da-thumbs li a:hover div{
-					left: 0px;
-				}
-			</style>
-	</noscript>
 </head>
 
 <body>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#home').tooltip('show')
-            $('#home').tooltip('hide')
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#home1').tooltip('show')
-            $('#home1').tooltip('hide')
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#login').tooltip('show')
-            $('#login').tooltip('hide')
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#signup').tooltip('show')
-            $('#signup').tooltip('hide')
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sort').tooltip('show')
-            $('#sort').tooltip('hide')
-        });
-    </script>
-
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#select').tooltip('show')
-            $('#select').tooltip('hide')
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#select1').tooltip('show')
-            $('#select1').tooltip('hide')
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#book').tooltip('show')
-            $('#book').tooltip('hide')
-        });
-    </script>
-    
-    <div class="navbar navbar-fixed-top navbar-inverse">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li class="divider-vertical"></li>
-                        <li class="">
-                            <a rel="tooltip" data-placement="bottom" title="Home" id="home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;Home</a> 
-                        </li>
-                        <li class="divider-vertical"></li>
-                        <li class="">
-                            <a rel="tooltip" data-placement="bottom" title="About Us" id="login" href="about.php"><i class="icon-info-sign icon-large"></i>&nbsp;About US</a>
-                        </li>
-                        <li class="divider-vertical"></li>
-                        <li class="">
-                            <a rel="tooltip" data-placement="bottom" title="View Books" id="book" href="view_book.php"><i class="icon-book icon-large"></i>&nbsp;View Books</a>
-                        </li>
-                        <li class="divider-vertical"></li>
-                        <li class="">
-                            <a rel="tooltip" data-placement="bottom" title="Admin Login" id="login" href="librarian/index.php"><i class="icon-user icon-large"></i>&nbsp;Admin Login</a>
-                        </li>
-
-                        <li class="divider-vertical"></li>
-                        <li class="signup"><span class="sg"></span></li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="margin-top">
-            <div class="row">
-                <div class="span12">
-                    <div class="header">
-                        <div class="pull-left">
-                            <img class="stilogo" src="images/title_img.jpg">
-                        </div>
-                    </div>
-
-                    <div class="alert alert-info">
-                        <Strong>Welcome to Library Management System</strong>&nbsp;
-                        <div class="pull-right">
-                            <i class="icon-calendar icon-large"></i>
-                            <?php
-                            $Today = date('y:m:d');
-                            $new = date('l, F d, Y', strtotime($Today));
-                            echo $new;
-                            ?>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="span2">
-                    <div class="life-side-bar">
-                        <div class="hero-container">
-
-
-                        </div>
-
-                        <ul class="nav nav-tabs nav-stacked">
-                            <li class="">
-                                <a href="#"><i class="icon-phone icon-large"></i>&nbsp;Contact US</a>
-                            </li>
-                        </ul>
-                        <strong>Address</strong>
-                        <p>FB Area Block 14, Naseerabad bus stop, Karachi.</p>
-                        <p>(+92) 333-2741250</p>
-                        <p>sameerkhowaja@gmail.com</p>
-
-
-
-                    </div>
-
-                    <!-- vision student login -->
-                    <div id="vision" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-header">
-                            <div class="alert alert-info"><strong>Vision</strong></div>
-                        </div>
-                        <div class="modal-body">
-                            <p>To be the center for Islamic reference information and knowledge at the global level and to strive to make the learning as a base for the establishment of Digital Library by providing an effective system of library management.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i>&nbsp;Close</button>
-                        </div>
-                    </div>
-
-
-                    <!-- mission student login -->
-                    <div id="mission" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-header">
-                            <div class="alert alert-info"><strong>Mission & Objective</strong></div>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                                To collect, process and disseminate the latest information for the purpose of teaching, research, and learning as a base for the establishment of the Digital Library. To provide a collection of reference materials and research programs and additional
-                                reading materials. Collecting, processing and disseminating the latest information for the purpose of teaching, research, and publications.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i>&nbsp;Close</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="span10">
-
-                    <div style="overflow:hidden; width:960px; margin:0 auto; padding:0 20px;">
-                        <div class="pix_diapo">
-
-                            <div data-thumb="images/img_play/1.jpg">
-                                <img src="images/img_play/1.jpg">
-                            </div>
-
-                            <div data-thumb="images/img_play/2.jpg">
-                                <img src="images/img_play/2.jpg">
-                            </div>
-
-                            <div data-thumb="images/img_play/3.jpg" data-time="7000">
-                                <img src="images/img_play/3.jpg">
-                            </div>
-
-                            <div data-thumb="images/img_play/4.jpg">
-                                <img src="images/img_play/4.jpg">
-
-                            </div>
-                            <div data-thumb="images/img_play/5.jpg">
-                                <img src="images/img_play/5.jpg">
-
-                            </div>
-                            <div data-thumb="images/img_play/6.jpg">
-                                <img src="images/img_play/6.jpg">
-
-                            </div>
-                            <div data-thumb="images/img_play/7.jpg">
-                                <img src="images/img_play/7.jpg">
-                            </div>
-
-                            <div data-thumb="images/img_play/8.jpg">
-                                <img src="images/img_play/8.jpg">
-                            </div>
-
-                            <div data-thumb="images/img_play/9.jpg">
-                                <img src="images/img_play/9.jpg">
-                            </div>
-                            <div data-thumb="images/img_play/10.jpg">
-                                <img src="images/img_play/10.jpg">
-                            </div>
-
-                        </div>
-                        <!-- #pix_diapo -->
-
-                    </div>
-
-
-                    </section>
-                </div>
-
-                <div class="span2">
-                    <h4></h4>
-
-                </div>
-                <div class="span10">
-
-                    <ul id="da-thumbs" class="da-thumbs">
-                        <li>
-                            <a href="">
-                                <img src="images/book1.jpg"  class="img-fluid" width="220px" height="180px"/>
-                                <div><span>Image 1</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/books2.jpg" class="img-fluid" width="220px" height="180px"/>
-                                <div><span>Image 2</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/book3.jpg" class="img-fluid" width="220px" height="180px"/>
-                                <div><span>Image 3</span></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/book4.jpg" class="img-fluid" width="220px" height="180px"/>
-                                <div><span>Image 4</span></div>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="text_content">
-                        <div class="abc">
-                            <!-- text content -->
-                            <h4>Vision</h4>
-                            <p>
-                                To be the center for Islamic reference information and knowledge at the global level and to strive to make the learning as a base for the establishment of Digital Library by providing an effective system of library management.
-                            </p>
-                            <hr>
-                            <h4>Mission & Objectives</h4>
-                            <p>
-                                To collect, process and disseminate the latest information for the purpose of teaching, research, and learning as a base for the establishment of the Digital Library. To provide a collection of reference materials and research programs and additional
-                                reading materials. Collecting, processing and disseminating the latest information for the purpose of teaching, research, and publications.
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                    <!-- end content -->
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <footer class="footer">
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg" style="position: fixed;">
         <div class="container">
-            <div class="foot-margin">
-                <p><a>Library Management System Since November 5, 2020</a></p>
+            <a class="navbar-brand" href="index.html">
+                <i class="fa fa-line-chart"></i> KaamKaaj
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link smoothScroll">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link smoothScroll">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.php" class="nav-link contact">Admin Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero hero-bg d-flex justify-content-center align-items-center" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="hero-text">
+                        <h1 class="text-white" data-aos="fade-up">We are ready for your digital marketing</h1>
+                        <button type="button" class="custom-btn btn-bg btn mt-3" data-toggle="modal" data-target="#exampleModalCenter" data-aos="fade-up" data-aos-delay="100">Order Now!</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                        <img src="images/working-girl.png" class="img-fluid" alt="working girl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- PROJECT -->
+    <section class="project section-padding" id="project">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <h4 class="mb-4 text-center display-4" data-aos="fade-up">
+                        Our Services
+                    </h4>
+
+                    <div class="owl-carousel owl-theme" id="project-slide">
+                        <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                            <img src="images/project/project-image01.jpg" class="img-fluid" alt="project image">
+
+                            <div class="project-info">
+                                <small>Marketing</small>
+
+                                <h3>
+                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Sweet Go Agency</span>
+                                        <i class="fa fa-angle-right project-icon"></i>
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="item project-wrapper" data-aos="fade-up">
+                            <img src="images/project/project-image02.jpg" class="img-fluid" alt="project image">
+
+                            <div class="project-info">
+                                <small>Website</small>
+
+                                <h3>
+                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Smart Ladies</span>
+                                        <i class="fa fa-angle-right project-icon"></i>
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="item project-wrapper" data-aos="fade-up">
+                            <img src="images/project/project-image03.jpg" class="img-fluid" alt="project image">
+
+                            <div class="project-info">
+                                <small>Branding</small>
+
+                                <h3>
+                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Shoes factory</span>
+                                        <i class="fa fa-angle-right project-icon"></i>
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="item project-wrapper" data-aos="fade-up">
+                            <img src="images/project/project-image04.jpg" class="img-fluid" alt="project image">
+
+                            <div class="project-info">
+                                <small>Social Media</small>
+
+                                <h3>
+                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Race Bicycle</span>
+                                        <i class="fa fa-angle-right project-icon"></i>
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="item project-wrapper" data-aos="fade-up">
+                            <img src="images/project/project-image05.jpg" class="img-fluid" alt="project image">
+
+                            <div class="project-info">
+                                <small>Video</small>
+
+                                <h3>
+                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Ultimate HealthCare</span>
+                                        <i class="fa fa-angle-right project-icon"></i>
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section-padding pb-0" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-7 mx-auto col-md-10 col-12">
+                    <h4 class="mb-4 text-center display-4" data-aos="fade-up">
+                        About Us
+                    </h4>
+
+                    <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/office.png" class="img-fluid" alt="office">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-12">
+                    <div class="contact-image" data-aos="fade-up">
+                        <img src="images/female-avatar.png" class="img-fluid" alt="website">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-7 col-12">
+                    <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Client Testimonials</h4>
+                    <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
+                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo.</h2>
+                    <p data-aos="fade-up" data-aos-delay="400">
+                        <strong>Mary Zoe</strong>
+                        <span class="mx-1">/</span>
+                        <small>Digital Agency (CEO)</small>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">More <strong>About</strong> Us</h1>
+                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Contact <strong>Us</strong></h1>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="my-4">Contact Info</h4>
+                    <p class="mb-1"><i class="fa fa-phone mr-2 footer-icon"></i> +92 333 3333333</p>
+                    <p><a href="mailto:hello@company.com"><i class="fa fa-envelope mr-2 footer-icon"></i> hello@company.com</a></p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="my-4">Our Address</h4>
+                    <p class="mb-1"><i class="fa fa-home mr-2 footer-icon"></i> FB Area Block 14 - Karachi</p>
+                </div>
+
+                <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
+                    <p class="copyright-text">
+                        Copyright &copy; 2020 KaamKaaj
+                        <br>
+                        <a rel="nofollow noopener" href="https://sameer-khowaja.web.app/">Designed By: Sameer Khowaja</a>
+                    </p>
+                </div>
+
+                <!-- <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                    <ul class="footer-link">
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Work with us</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div> -->
+
+                <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                    <ul class="social-icon">
+                        <li>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-dribbble"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-behance"></a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </footer>
 
-    <script type="text/javascript">
-        $(function() {
-            $('#da-thumbs > li').hoverdir();
-        });
-    </script>
-
-    <div id="logout" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-body">
-            <div class="alert alert-danger">Are you sure you want to Logout</div>
-        </div>
-        <div class="modal-footer">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-            <a href="logout.php" class="btn btn-danger">Yes</a>
+    <!-- Contact Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="modal-title text-center" id="exampleModalCenterTitle">Order Us Using</h2>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr class="text-center">
+                            <th scope="col">WhatsApp</th>
+                            <td scope="col">+92 333 3388999</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">Close</button>
+            </div>
+            </div>
         </div>
     </div>
 
-    <script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script>
-    <script type='text/javascript' src='scripts/jquery.hoverIntent.minified.js'></script>
-    <script type='text/javascript' src='scripts/diapo.js'></script>
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
 </body>
 
 </html>
