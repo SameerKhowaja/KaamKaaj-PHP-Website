@@ -1,3 +1,4 @@
+<?php include('session.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,12 +24,11 @@
 <?php include('dbconfig.php'); ?>
 
 <body>
-    <?php include('session.php'); ?>
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg" style="position: fixed;">
         <div class="container">
             <a class="navbar-brand" href="adminPanel.php">
-                <i class="fa fa-line-chart"></i> KaamKaaj
+                <i class="fa fa-line-chart"></i> Carity
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,16 +60,16 @@
                         Welcome, <strong><?php echo $_SESSION['username'] ?></strong>
                     </h2>
 
-                    <div class="owl-carousel owl-theme" id="project-slide">
+                    <div class="owl-carousel owl-theme" id="project-slide" data-aos="fade-up">
                         <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
-                            <img src="images/project/project-image01.jpg" class="img-fluid" alt="project image">
+                            <img src="images/project//project-image01.jpg" class="img-fluid" alt="project image">
 
                             <div class="project-info">
-                                <small>Marketing</small>
+                                <small>Service #01</small>
 
                                 <h3>
-                                    <a href="project-detail.html">
-                                        <span>Sweet Go Agency</span>
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>House Cleaner</span>
                                         <i class="fa fa-angle-right project-icon"></i>
                                     </a>
                                 </h3>
@@ -80,11 +80,11 @@
                             <img src="images/project/project-image02.jpg" class="img-fluid" alt="project image">
 
                             <div class="project-info">
-                                <small>Website</small>
+                                <small>Service #02</small>
 
                                 <h3>
-                                    <a href="project-detail.html">
-                                        <span>Smart Ladies</span>
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Cook</span>
                                         <i class="fa fa-angle-right project-icon"></i>
                                     </a>
                                 </h3>
@@ -95,11 +95,11 @@
                             <img src="images/project/project-image03.jpg" class="img-fluid" alt="project image">
 
                             <div class="project-info">
-                                <small>Branding</small>
+                                <small>Service #03</small>
 
                                 <h3>
-                                    <a href="project-detail.html">
-                                        <span>Shoes factory</span>
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Event Cleaner</span>
                                         <i class="fa fa-angle-right project-icon"></i>
                                     </a>
                                 </h3>
@@ -110,26 +110,11 @@
                             <img src="images/project/project-image04.jpg" class="img-fluid" alt="project image">
 
                             <div class="project-info">
-                                <small>Social Media</small>
+                                <small>Service #04</small>
 
                                 <h3>
-                                    <a href="project-detail.html">
-                                        <span>Race Bicycle</span>
-                                        <i class="fa fa-angle-right project-icon"></i>
-                                    </a>
-                                </h3>
-                            </div>
-                        </div>
-
-                        <div class="item project-wrapper" data-aos="fade-up">
-                            <img src="images/project/project-image05.jpg" class="img-fluid" alt="project image">
-
-                            <div class="project-info">
-                                <small>Video</small>
-
-                                <h3>
-                                    <a href="project-detail.html">
-                                        <span>Ultimate HealthCare</span>
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Helper for Shifting</span>
                                         <i class="fa fa-angle-right project-icon"></i>
                                     </a>
                                 </h3>

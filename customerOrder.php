@@ -1,3 +1,4 @@
+<?php include('session.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,12 +24,11 @@
 <?php include('dbconfig.php'); ?>
 
 <body>
-    <?php include('session.php'); ?>
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg" style="position: fixed;">
         <div class="container">
             <a class="navbar-brand" href="customerOrder.php">
-                <i class="fa fa-line-chart"></i> KaamKaaj
+                <i class="fa fa-line-chart"></i> Carity
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

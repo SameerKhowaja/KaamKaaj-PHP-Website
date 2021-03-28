@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>KaamKaaj</title>
+    <title>Carity</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="description" content="">
@@ -25,8 +25,8 @@
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg" style="position: fixed;">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fa fa-line-chart"></i> KaamKaaj
+            <a class="navbar-brand" href="index.php">
+                <i class="fa fa-line-chart"></i> CARITY
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,14 +62,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                     <div class="hero-text">
-                        <h1 class="text-white" data-aos="fade-up">We are ready for your digital marketing</h1>
+                        <h2 class="text-white" data-aos="fade-up">Dedicated to your house care!</h2>
                         <button type="button" class="custom-btn btn-bg btn mt-3" data-toggle="modal" data-target="#exampleModalCenter" data-aos="fade-up" data-aos-delay="100">Order Now!</button>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-12">
                     <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
-                        <img src="images/working-girl.png" class="img-fluid" alt="working girl">
+                        <img src="images/logo.png" class="img-fluid" alt="Logo">
                     </div>
                 </div>
             </div>
@@ -89,14 +89,14 @@
 
                     <div class="owl-carousel owl-theme" id="project-slide">
                         <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
-                            <img src="images/project/project-image01.jpg" class="img-fluid" alt="project image">
+                            <img src="images/project//project-image01.jpg" class="img-fluid" alt="project image">
 
                             <div class="project-info">
-                                <small>Marketing</small>
+                                <small>Service #01</small>
 
                                 <h3>
-                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
-                                        <span>Sweet Go Agency</span>
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>House Cleaner</span>
                                         <i class="fa fa-angle-right project-icon"></i>
                                     </a>
                                 </h3>
@@ -107,11 +107,11 @@
                             <img src="images/project/project-image02.jpg" class="img-fluid" alt="project image">
 
                             <div class="project-info">
-                                <small>Website</small>
+                                <small>Service #02</small>
 
                                 <h3>
-                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
-                                        <span>Smart Ladies</span>
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Cook</span>
                                         <i class="fa fa-angle-right project-icon"></i>
                                     </a>
                                 </h3>
@@ -122,11 +122,11 @@
                             <img src="images/project/project-image03.jpg" class="img-fluid" alt="project image">
 
                             <div class="project-info">
-                                <small>Branding</small>
+                                <small>Service #03</small>
 
                                 <h3>
-                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
-                                        <span>Shoes factory</span>
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Event Cleaner</span>
                                         <i class="fa fa-angle-right project-icon"></i>
                                     </a>
                                 </h3>
@@ -137,26 +137,11 @@
                             <img src="images/project/project-image04.jpg" class="img-fluid" alt="project image">
 
                             <div class="project-info">
-                                <small>Social Media</small>
+                                <small>Service #04</small>
 
                                 <h3>
-                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
-                                        <span>Race Bicycle</span>
-                                        <i class="fa fa-angle-right project-icon"></i>
-                                    </a>
-                                </h3>
-                            </div>
-                        </div>
-
-                        <div class="item project-wrapper" data-aos="fade-up">
-                            <img src="images/project/project-image05.jpg" class="img-fluid" alt="project image">
-
-                            <div class="project-info">
-                                <small>Video</small>
-
-                                <h3>
-                                    <a href="project-detail.html" data-toggle="modal" data-target="#exampleModalCenter">
-                                        <span>Ultimate HealthCare</span>
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span>Helper for Shifting</span>
                                         <i class="fa fa-angle-right project-icon"></i>
                                     </a>
                                 </h3>
@@ -169,47 +154,62 @@
         </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="about section-padding pb-0" id="about">
+    <!-- TESTIMONIAL -->
+    <section class="testimonial section-padding" id="about">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-7 mx-auto col-md-10 col-12">
                     <h4 class="mb-4 text-center display-4" data-aos="fade-up">
                         About Us
                     </h4>
-
-                    <div class="about-image" data-aos="fade-up" data-aos-delay="200">
-                        <img src="images/office.png" class="img-fluid" alt="office">
-                    </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-
-    <!-- TESTIMONIAL -->
-    <section class="testimonial section-padding">
-        <div class="container">
-            <div class="row">
                 <div class="col-lg-6 col-md-5 col-12">
                     <div class="contact-image" data-aos="fade-up">
-                        <img src="images/female-avatar.png" class="img-fluid" alt="website">
+                        <img src="images/about-us.png" class="img-fluid" alt="website">
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-7 col-12">
-                    <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Client Testimonials</h4>
-                    <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
-                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo.</h2>
+                    <h3 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Carity (In-Home Service)</h3>
+                    <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Are you looking for a platform providing helpers for events and/ or day-to-day operations? Here we are with our venture to fulfill your demand. We provide you handy man services with augmented perks at yours utmost convenience.</h3>
                     <p data-aos="fade-up" data-aos-delay="400">
-                        <strong>Mary Zoe</strong>
+                        <strong>Carity</strong>
                         <span class="mx-1">/</span>
-                        <small>Digital Agency (CEO)</small>
+                        <small>Home Care</small>
                     </p>
                 </div>
+            </div>
 
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-7 mx-auto col-md-10 col-12">
+                    <h4 class="mb-4 text-center display-4" data-aos="fade-up">
+                        Group Members
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row" style="margin:auto;" data-aos="fade-up">
+                <div class="col-lg-4">
+                    <figure class="figure">
+                        <img src="images/about/img01.PNG" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+                        <figcaption class="figure-caption text-center text-capitalize"><b>Sarah Khowaja</b>, BBA (Finance Major) - IBA</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4">
+                    <figure class="figure">
+                        <img src="images/about/img02.PNG" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+                        <figcaption class="figure-caption text-center text-capitalize"><b>Syeda Farwa Batool</b>, BBA (Marketing Major) - IBA</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4">
+                    <figure class="figure">
+                        <img src="images/about/img03.PNG" class="figure-img img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+                        <figcaption class="figure-caption text-center text-capitalize"><b>Syeda Rabab Fatima</b>, BBA (Marketing Major) - IBA</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </section>
@@ -225,8 +225,8 @@
 
                 <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
                     <h4 class="my-4">Contact Info</h4>
-                    <p class="mb-1"><i class="fa fa-phone mr-2 footer-icon"></i> +92 333 3333333</p>
-                    <p><a href="mailto:hello@company.com"><i class="fa fa-envelope mr-2 footer-icon"></i> hello@company.com</a></p>
+                    <p class="mb-1"><i class="fa fa-phone mr-2 footer-icon"></i> +92 336 3307956</p>
+                    <p><a href="mailto:hello@company.com"><i class="fa fa-envelope mr-2 footer-icon"></i> carity531@gmail.com</a></p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
@@ -236,7 +236,7 @@
 
                 <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
                     <p class="copyright-text">
-                        Copyright &copy; 2020 KaamKaaj
+                        Copyright &copy; 2020 Carity
                         <br>
                         <a rel="nofollow noopener" href="https://sameer-khowaja.web.app/">Designed By: Sameer Khowaja</a>
                     </p>
@@ -253,16 +253,8 @@
                 <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
                     <ul class="social-icon">
                         <li>
-                            <a href="#" class="fa fa-instagram"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fa fa-twitter"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fa fa-dribbble"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fa fa-behance"></a>
+                            
+                    <a href="https://www.facebook.com/Carity-100330325484165/?ref=page_internal" target="_blank" data-aos-delay="100" class="btn btn-warning btn-lg"><span class="fa fa-facebook fa-2x"></span> Facebook Us...!</a>
                         </li>
                     </ul>
                 </div>
@@ -281,7 +273,7 @@
                     <tbody>
                         <tr class="text-center">
                             <th scope="col">WhatsApp</th>
-                            <td scope="col">+92 333 3388999</td>
+                            <td scope="col">+92 336 3307956</td>
                         </tr>
                     </tbody>
                 </table>

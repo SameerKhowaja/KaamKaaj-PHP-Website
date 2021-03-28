@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body style="background-color:#f7c615;">
     <?php include('dbconfig.php'); ?>
     <div class="limiter">
         <div class="container-login100">

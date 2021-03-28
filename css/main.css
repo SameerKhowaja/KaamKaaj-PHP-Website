@@ -130,7 +130,7 @@ iframe {
     font-family: OpenSans-Regular;
     font-size: 15px;
     line-height: 1.4;
-    color: #4272d7
+    color: #f7c615
 }
 
 .hov1:hover {
@@ -154,7 +154,7 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: #129db3;
+    background: #f7c615;
 }
 
 .wrap-login100 {
@@ -226,7 +226,7 @@ input.input100 {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: #4272d7
+    background-color: #f7c615
 }
 
 .focus-input100-1::before {
@@ -246,7 +246,7 @@ input.input100 {
     position: absolute;
     width: 1px;
     height: 0;
-    background-color: #4272d7
+    background-color: #f7c615
 }
 
 .focus-input100-1::after {
@@ -320,7 +320,7 @@ input.input100 {
     padding: 0 20px;
     width: 100%;
     height: 60px;
-    background-color: #4272d7;
+    background-color: #f7c615;
     font-family: OpenSans-Regular;
     font-size: 14px;
     color: #fff;
